@@ -12,7 +12,7 @@ module.exports = function (req, res, next) {
         });
     }
 
-    // Verify token
+    // Verify jwt token
     try {
         const decoded = jwt.verify(token, config.get('jwtSecret'));
 
